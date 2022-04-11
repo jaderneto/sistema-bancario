@@ -7,5 +7,9 @@ c1 = Conta(datetime.now(), p1)
 c1.deposit(100)
 c1.deposit(300)
 
-print(c1.value)
-print(c1.owner.cpf)
+p2 = Person('Taiane', '54399235534', 'Female')
+c2 = Conta(datetime.now(), p2)
+c2.deposit(500)
+
+print(c1.owner.name + ': ', c1.value)
+print(c2.owner.name + ': ', c2.value)
